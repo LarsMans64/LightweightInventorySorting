@@ -33,7 +33,7 @@ public abstract class MixinGenericContainerScreen extends HandledScreen<GenericC
         int x = this.x + this.backgroundWidth - 20 + LightweightInventorySortingConfig.xOffsetContainer;
         int y = this.y + 4 + LightweightInventorySortingConfig.yOffsetContainer;
         int size = LightweightInventorySortingConfig.buttonSize.getButtonSize();
-        containerSortButton = new ContainerSortButton(x, y, size, size, Text.literal("S"), 0, getScreenHandler().slots.size() - 37, this);
+        containerSortButton = new ContainerSortButton(x + 12 - size, y + 12 - size, size, size, Text.literal("S"), 0, getScreenHandler().slots.size() - 37, this);
 
         // Add button to the screen
         this.addDrawableChild(containerSortButton);
